@@ -8,7 +8,7 @@
 #define l (double)2 // Longitud de la placa
 #define d (double)1 // Separacion entre placas
 #define V0 (double)100 // Diferencia de potencial entre placas
-#define h (double)5.0/512.0 // Longitud de cada celda de la rejilla, tal que celdas=256
+#define h (double)5.0/512.0 // Longitud de cada celda de la rejilla, tal que celdas=512
 #define N (int)(2*pow((L/h),2)) // Numero de iteraciones
 #define n (int)(L/h) // Numero de celdas por eje (256)
 #define inicio_placa1 ((int)(((L/2) - (d/2))/h))*n + ((int)(((L/2) - (l/2))/h))
