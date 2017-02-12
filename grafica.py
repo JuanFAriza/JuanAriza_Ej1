@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
+n = 512
+
 file = open('datos.dat', 'rt') # Abre el archivo de datos
 
 try:
@@ -19,11 +21,11 @@ for dato in datos:
     del a[-1]
     medidas.append(a)
 
-V = np.array(medidas[0:256],dtype='float')
-Ex = np.array(medidas[256:512],dtype='float')
-Ey = np.array(medidas[512:],dtype='float')
+V = np.array(medidas[0:n],dtype='float')
+Ex = np.array(medidas[n:(2*n)],dtype='float')
+Ey = np.array(medidas[(2*n):],dtype='float')
 
-x = np.linspace(0,0.05,256)
+x = np.linspace(0,0.05,n)
 y = -x
 
 ax = plt.axes()
